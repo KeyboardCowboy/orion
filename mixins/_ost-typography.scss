@@ -1,0 +1,12 @@
+// Custom typographical mixins
+
+// REM sizing with a px fallback for older browsers.
+@mixin x-rem ($property, $value) {
+  #{$property}: ($value * $font-base) + px;
+  #{$property}: #{$value}rem;
+}
+
+// DEPRECATED: Use x-rem.  Will be removed in V2.
+@mixin font-size($sizeValue: 1.6){
+  @include x-rem(font-size, $sizeValue);
+}
