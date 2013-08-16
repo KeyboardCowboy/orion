@@ -2,63 +2,63 @@
   "CodeKitInfo" : "This is a CodeKit project configuration file. It is designed to sync project settings across multiple machines. Modifying the contents of this file can be a poor life decision if you don't know what you're doing. This file is not useful unless accompanied by the project that created it in CodeKit. For more information, see: http:\/\/incident57.com\/codekit",
   "creatorBuild" : "8317",
   "files" : {
-    "\/mixins\/partials\/_ost-typography.scss" : {
+    "\/placeholders\/_backgrounds.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/partials\/_ost-typography.scss",
+      "inputAbbreviatedPath" : "\/placeholders\/_backgrounds.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/partials\/_ost-typography.css",
+      "outputAbbreviatedPath" : "\/_backgrounds.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/styles\/partials\/_typeplate.scss" : {
+    "\/styles\/_typeplate.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/partials\/_typeplate.scss",
+      "inputAbbreviatedPath" : "\/styles\/_typeplate.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/styles\/partials\/_typeplate.css",
+      "outputAbbreviatedPath" : "\/_typeplate.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/mixins\/partials\/_ost-styles.scss" : {
+    "\/mixins\/zen-grids\/zen\/_background.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/partials\/_ost-styles.scss",
-      "outputStyle" : 1,
+      "inputAbbreviatedPath" : "\/mixins\/zen-grids\/zen\/_background.scss",
+      "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/partials\/_ost-styles.css",
+      "outputAbbreviatedPath" : "\/mixins\/zen-grids\/_background.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/mixins\/partials\/_ost-structure.scss" : {
+    "\/styles\/_lists.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/partials\/_ost-structure.scss",
+      "inputAbbreviatedPath" : "\/styles\/_lists.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/partials\/_ost-structure.css",
+      "outputAbbreviatedPath" : "\/_lists.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/placeholders\/partials\/_backgrounds.scss" : {
+    "\/mixins\/zen-grids\/_zen.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/placeholders\/partials\/_backgrounds.scss",
-      "outputStyle" : 1,
+      "inputAbbreviatedPath" : "\/mixins\/zen-grids\/_zen.scss",
+      "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/placeholders\/partials\/_backgrounds.css",
+      "outputAbbreviatedPath" : "\/mixins\/_zen.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -66,23 +66,23 @@
       "ignoreWasSetByUser" : 0,
       "ignore" : 0,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 1,
+      "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_test\/mixins.scss",
-      "outputStyle" : 1,
+      "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/_test\/mixins.css",
+      "outputAbbreviatedPath" : "\/mixins.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/styles\/_styles.scss" : {
+    "\/styles\/_normalize.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/_styles.scss",
-      "outputStyle" : 3,
+      "inputAbbreviatedPath" : "\/styles\/_normalize.scss",
+      "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/styles\/_styles.css",
+      "outputAbbreviatedPath" : "\/_normalize.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -98,6 +98,18 @@
       "fileType" : 4,
       "debugStyle" : 0
     },
+    "\/_styles.scss" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_styles.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/_test\/_styles.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
     "\/vars\/_variables.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
@@ -106,31 +118,7 @@
       "inputAbbreviatedPath" : "\/vars\/_variables.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/vars\/_variables.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/mixins\/partials\/_ost-interaction.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/partials\/_ost-interaction.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/partials\/_ost-interaction.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/styles\/partials\/_lists.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/partials\/_lists.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/styles\/partials\/_lists.css",
+      "outputAbbreviatedPath" : "\/_variables.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -140,9 +128,57 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_test\/styles.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/styles.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/mixins\/_ost-typography.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/mixins\/_ost-typography.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/_test\/styles.css",
+      "outputAbbreviatedPath" : "\/_ost-typography.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/mixins\/_ost-interaction.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/mixins\/_ost-interaction.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/_ost-interaction.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/_mixins.scss" : {
+      "ignoreWasSetByUser" : 1,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_mixins.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/_test\/_mixins.css",
+      "fileType" : 4,
+      "debugStyle" : 0
+    },
+    "\/mixins\/zen-grids\/zen\/_grids.scss" : {
+      "ignoreWasSetByUser" : 0,
+      "ignore" : 1,
+      "hidden" : 0,
+      "outputPathIsSetByUser" : 0,
+      "inputAbbreviatedPath" : "\/mixins\/zen-grids\/zen\/_grids.scss",
+      "outputStyle" : 3,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/mixins\/zen-grids\/_grids.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -152,9 +188,9 @@
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
       "inputAbbreviatedPath" : "\/_test\/placeholders.scss",
-      "outputStyle" : 1,
+      "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/_test\/placeholders.css",
+      "outputAbbreviatedPath" : "\/placeholders.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
@@ -166,105 +202,69 @@
       "inputAbbreviatedPath" : "\/vars\/_typeplate.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/vars\/_typeplate.css",
+      "outputAbbreviatedPath" : "\/_typeplate.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_test\/mixins.css" : {
+    "\/styles\/_base.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_test\/mixins.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/styles\/partials\/_base.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/partials\/_base.scss",
+      "inputAbbreviatedPath" : "\/styles\/_base.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/styles\/partials\/_base.css",
+      "outputAbbreviatedPath" : "\/_base.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_test\/styles.css" : {
+    "\/mixins\/_ost-structure.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_test\/styles.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/mixins\/partials\/_ost-drupalqf.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/partials\/_ost-drupalqf.scss",
+      "inputAbbreviatedPath" : "\/mixins\/_ost-structure.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/partials\/_ost-drupalqf.css",
+      "outputAbbreviatedPath" : "\/_ost-structure.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/mixins\/_mixins.scss" : {
+    "\/mixins\/_ost-styles.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/mixins\/_mixins.scss",
+      "inputAbbreviatedPath" : "\/mixins\/_ost-styles.scss",
       "outputStyle" : 1,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/mixins\/_mixins.css",
+      "outputAbbreviatedPath" : "\/_ost-styles.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_test\/placeholders.css" : {
-      "ignoreWasSetByUser" : 0,
+    "\/_placeholders.scss" : {
+      "ignoreWasSetByUser" : 1,
       "ignore" : 1,
       "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_test\/placeholders.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
-    },
-    "\/styles\/partials\/_normalize.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/styles\/partials\/_normalize.scss",
-      "outputStyle" : 1,
-      "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/styles\/partials\/_normalize.css",
-      "fileType" : 4,
-      "debugStyle" : 0
-    },
-    "\/placeholders\/_placeholders.scss" : {
-      "ignoreWasSetByUser" : 0,
-      "ignore" : 1,
-      "hidden" : 0,
-      "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/placeholders\/_placeholders.scss",
+      "outputPathIsSetByUser" : 1,
+      "inputAbbreviatedPath" : "\/_placeholders.scss",
       "outputStyle" : 3,
       "shouldRunBless" : 1,
-      "outputAbbreviatedPath" : "\/placeholders\/_placeholders.css",
+      "outputAbbreviatedPath" : "\/_test\/_placeholders.css",
       "fileType" : 4,
       "debugStyle" : 0
     },
-    "\/_test\/master.css" : {
+    "\/mixins\/_ost-drupalqf.scss" : {
       "ignoreWasSetByUser" : 0,
       "ignore" : 1,
       "hidden" : 0,
       "outputPathIsSetByUser" : 0,
-      "inputAbbreviatedPath" : "\/_test\/master.css",
-      "outputAbbreviatedPath" : "No Output Path",
-      "fileType" : 16
+      "inputAbbreviatedPath" : "\/mixins\/_ost-drupalqf.scss",
+      "outputStyle" : 1,
+      "shouldRunBless" : 1,
+      "outputAbbreviatedPath" : "\/_ost-drupalqf.css",
+      "fileType" : 4,
+      "debugStyle" : 0
     }
   },
   "manualImportLinks" : [
@@ -282,7 +282,7 @@
     "hamlOutputFormat" : 2,
     "stylusAutoOutputPathReplace1" : "stylus",
     "lessStrictImports" : 0,
-    "sassAutoOutputPathStyle" : 0,
+    "sassAutoOutputPathStyle" : 2,
     "stylusAutoOutputPathReplace2" : "css",
     "lessAutoOutputPathStyle" : 2,
     "lessIECompatibility" : 1,
