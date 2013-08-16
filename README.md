@@ -1,9 +1,11 @@
 # Orion SASS Library
-Version 1.x
+Version 1.1
 
 https://github.com/KeyboardCowboy/orion
 
 The CSS Directory is organized in the following manner:
+
+## Contents
 
 - Libraries
   These are third party SASS libraries such as Zen Grids or Bourbon that contain
@@ -21,5 +23,9 @@ The CSS Directory is organized in the following manner:
   Components are purely CSS declarations.  They should not contain any variables
   or other functionality.
 
-Within each of these directories may be subdirectories to better organize large
-groups of like files.  Standard naming conventions have not yet been defined.
+## Changelog
+
+### Release 1.1
+- Added Drupal QuickFix for improved status messages
+- Upgraded x-rem to handle multiple values
+- Removed Text-Shadow mixin.  IE just sucks at rendering text shadows.

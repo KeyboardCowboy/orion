@@ -4,12 +4,6 @@
 $font-base: 18 !default;
 
 // REM sizing with a px fallback for older browsers.
-/*@mixin x-rem($property, $value) {
-  #{$property}: ($value * $font-base) + px;
-  #{$property}: #{$value}rem;
-}*/
-
-// REM sizing with a px fallback for older browsers.
 @mixin x-rem($property, $values) {
   // Empty list for all values in px
   $px-values: ();

@@ -26,7 +26,7 @@
     padding: 0;
 
     &.pager-current {
-      @include box-shadow(inset 1px 1px 1px 0 $shadow);
+      @include x-box-shadow(inset 1px 1px 1px 0 $shadow);
       @include linear-gradient(bottom, $cs1, $cs2);
       padding: .25em .75em;
       border: {
@@ -39,7 +39,7 @@
     a {
       display: block;
       float: left;
-      @include box-shadow(0 1px 1px 0 $shadow);
+      @include x-box-shadow(0 1px 1px 0 $shadow);
       @include linear-gradient(top, $cs1, $cs2);
       padding: .25em .75em;
       border: {
@@ -58,14 +58,14 @@
     }
 
     &.last a, &:last-child a {
-      @include box-shadow(1px 1px 1px 0 $shadow);
+      @include x-box-shadow(1px 1px 1px 0 $shadow);
     }
 
     a:hover {
       @include linear-gradient(bottom, $cs1, $cs2);
     }
     a:active {
-      @include box-shadow(inset 1px 1px 1px 0 $shadow);
+      @include x-box-shadow(inset 1px 1px 1px 0 $shadow);
       @include linear-gradient(bottom, $cs1, $cs2);
     }
   }
@@ -106,13 +106,13 @@
       text-decoration: none;
       text-transform: capitalize;
 
-      @include text-shadow(1,1,0, $text-shadow);
-      @include font-size(($size * 0.85));
+      text-shadow: 1px 1px 0 $text-shadow;
+      @include x-rem(font-size, ($size * 0.85));
 
       &:link, &:visited {
         color: $off;
         @include linear-gradient($base-color, $stop-gradient);
-        @include box-shadow(1px 1px 1px 0 rgba(0,0,0, 0.15));
+        @include x-box-shadow(1px 1px 1px 0 rgba(0,0,0, 0.15));
       }
 
       &:hover {
@@ -122,7 +122,7 @@
       &:active, &.active {
         color: $hover;
         @include linear-gradient($stop-gradient, $base-color);
-        @include box-shadow(inset 1px 1px 1px 0 $inset-shadow);
+        @include x-box-shadow(inset 1px 1px 1px 0 $inset-shadow);
       }
     }
   }
