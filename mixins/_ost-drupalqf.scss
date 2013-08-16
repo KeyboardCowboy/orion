@@ -131,7 +131,7 @@
 // -- Messages
 //  - Apply to the messages container (i.e. '.messages')
 //    To override colors, define $status, $warning and $error.
-@mixin message() {
+@mixin messages {
   // Define default colors.
   $status:  rgb(3, 15, 91) !default;
   $warning: rgb(101, 73, 23) !default;
