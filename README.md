@@ -1,5 +1,5 @@
 # Orion SASS Library
-Version 1.2
+Version 2.0-beta1
 
 https://github.com/KeyboardCowboy/orion
 
@@ -24,10 +24,8 @@ The CSS Directory is organized in the following manner:
 
 ## Changelog
 
-### Release 1.2
+### Release 2.0-beta1
 - Added zen-grids back into mixins
-
-### Release 1.1
 - Added Drupal QuickFix for improved status messages
 - Upgraded x-rem to handle multiple values
 - Removed Text-Shadow mixin.  IE just sucks at rendering text shadows.
