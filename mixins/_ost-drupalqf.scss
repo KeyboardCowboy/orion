@@ -127,3 +127,35 @@
     }
   }
 }
+
+// -- Messages
+//  - Apply to the messages container (i.e. '.messages')
+//    To override colors, define $status, $warning and $error.
+@mixin message() {
+  // Define default colors.
+  $status:  rgb(3, 15, 91) !default;
+  $warning: rgb(101, 73, 23) !default;
+  $error:   rgb(69, 4, 12) !default;
+
+  border: 2px solid;
+  padding: 1em 1em 1em 3em;
+  border-radius: .25em;
+  box-shadow: 2px 2px 1px 0 rgba(0,0,0,.25);
+  margin: 1em 0;
+
+  &.status  {
+    color: $status;
+    border-color: $status;
+    background: lighten($status, 78%) url('../images/ok.png') 10px .75em no-repeat;
+  }
+  &.warning {
+    color: $warning;
+    border-color: $warning;
+    background: lighten($warning, 70%) url('../images/warning.png') 10px .75em no-repeat;
+  }
+  &.error   {
+    color: $error;
+    border-color: $error;
+    background: lighten($error, 80%) url('../images/error.png') 10px .75em no-repeat;
+  }
+}
