@@ -4,9 +4,34 @@
 $font-base: 18 !default;
 
 // REM sizing with a px fallback for older browsers.
-@mixin x-rem($property, $value) {
+/*@mixin x-rem($property, $value) {
   #{$property}: ($value * $font-base) + px;
   #{$property}: #{$value}rem;
+}*/
+
+// REM sizing with a px fallback for older browsers.
+@mixin x-rem($property, $values) {
+  // Empty list for all values in px
+  $px-values: ();
+  $rem-values: ();
+
+  // Iterate over entries
+  @each $value in $values {
+    // If the value is zero, return 0
+    @if $value == 0 or type_of($value) != number {
+      $px-values: append($px-values, $value);
+      $rem-values: append($rem-values, $value);
+    }
+    // If the value is not zero, convert it from px to rem
+    @else {
+      $px-values: append($px-values, ($value * $font-base) );
+      $rem-values: append($rem-values, #{$value}rem);
+    }
+  }
+
+  // Return the property and its list of converted values
+  #{$property}: #{$px-values};
+  #{$property}: #{$rem-values};
 }
 
 // DEPRECATED: Use x-rem.  Will be removed in V2.
