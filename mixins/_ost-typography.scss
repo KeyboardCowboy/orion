@@ -1,10 +1,10 @@
 // Custom typographical mixins
 
-// Defaults
-$font-base: 18 !default;
-
 // REM sizing with a px fallback for older browsers.
 @mixin x-rem($property, $values) {
+  // Defaults
+  $font-base: 18 !default;
+
   // Empty list for all values in px
   $px-values: ();
   $rem-values: ();
@@ -18,7 +18,7 @@ $font-base: 18 !default;
     }
     // If the value is not zero, convert it from px to rem
     @else {
-      $px-values: append($px-values, ($value * $font-base) );
+      $px-values: append($px-values, #{($value * $font-base)}px);
       $rem-values: append($rem-values, #{$value}rem);
     }
   }
