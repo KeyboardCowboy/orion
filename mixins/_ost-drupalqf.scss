@@ -142,20 +142,21 @@
   border-radius: .25em;
   box-shadow: 2px 2px 1px 0 rgba(0,0,0,.25);
   margin: 1em 0;
+  background-position: 10px .75em;
+  background-repeat: no-repeat;
 
-  &.status  {
-    color: $status;
-    border-color: $status;
-    background: lighten($status, 78%) url('../images/ok.png') 10px .75em no-repeat;
-  }
-  &.warning {
-    color: $warning;
-    border-color: $warning;
-    background: lighten($warning, 70%) url('../images/warning.png') 10px .75em no-repeat;
-  }
-  &.error   {
-    color: $error;
-    border-color: $error;
-    background: lighten($error, 80%) url('../images/error.png') 10px .75em no-repeat;
+  &.status  {@include message($status, '../images/ok.png');}
+  &.warning {@include message($warning, '../images/warning.png');}
+  &.error   {@include message($error, '../images/error.png');}
+}
+
+// -- Message Helper
+@mixin message($color, $icon: '') {
+  color: $color;
+  border-color: $color;
+  background-color: lighten($color, 90 - lightness($color));
+
+  @if $icon != '' {
+    background-image: url($icon);
   }
 }
