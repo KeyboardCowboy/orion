@@ -17,6 +17,17 @@ ul li {
   list-style: disc outside none;
 }
 
+// Easy customizing of list styles
+ul.disc {
+  li {list-style-type: disc;}
+}
+ul.circle {
+  li {list-style-type: circle;}
+}
+ul.square {
+  li {list-style-type: square;}
+}
+
 // Lists used as menus.
 ul.menu, ol.menu {
   margin-left: 0;
