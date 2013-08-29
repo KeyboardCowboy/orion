@@ -18,14 +18,11 @@ ul li {
 }
 
 // Easy customizing of list styles
-ul.disc {
-  li {list-style-type: disc;}
-}
-ul.circle {
-  li {list-style-type: circle;}
-}
-ul.square {
-  li {list-style-type: square;}
+ul {
+  &.no-bullet li {list-style-type: none;}
+  &.disc      li {list-style-type: disc;}
+  &.circle    li {list-style-type: circle;}
+  &.square    li {list-style-type: square;}
 }
 
 // Lists used as menus.
