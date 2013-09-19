@@ -1,5 +1,8 @@
 ORION v2.0-beta2,
 --------------------------------------------------------------------------------
+[18-Sep-2013:KeyboardCowboy]
+- Removed dotted anchor indicator.
+
 [29-Aug-2013:KeyboardCowboy]
 - Added quick/switch list styles as classes.
 
