@@ -76,3 +76,13 @@
     $itt: $itt + 1
   }
 }
+
+// Hide an element but still make it accessible to screen readers.
+// Borrowed from Drupal
+@mixin invisible {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  height: 1px;
+}
