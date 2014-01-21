@@ -30,6 +30,6 @@ Additional libraries are available and do not require additional installation.
 - [Sassy Buttons](http://jaredhardy.com/sassy-buttons) for fun button styles
 
 ## Getting Started
-1. Copy the PROJECT directory out of Orion and into another directory.
+1. Copy the _new_project directory out of Orion and into another directory.
 2. Check to ensure the paths to Orion are correct inside _master.scss.
 3. Start adding your own SCSS.
