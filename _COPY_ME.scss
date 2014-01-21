@@ -1,0 +1,24 @@
+// Orion starter file.
+// Copy this file to your project folder. Don't forget to adjust the paths to
+// Orion and install the necessary libraries if you want to use them.
+
+// Libraries that require installation:
+// - Bourbon (Required)
+// - Zen Grids (_grids.scss)
+// - Sassy Buttons (_buttons.scss)
+
+// Define variables
+@import 'variables';
+//@import 'your/variables';
+
+// Load mixins and functions
+@import 'bourbon/bourbon';
+@import 'mixins';
+//@import 'grids';
+//@import 'your/mixins';
+
+// Import base styles
+@import 'styles';
+//@import 'backgrounds';
+//@import 'buttons';
+//@import 'your/styles';

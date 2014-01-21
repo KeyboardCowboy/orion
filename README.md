@@ -1,5 +1,5 @@
 # Orion SASS Library
-Version 2.1
+Version 3.x
 
 https://github.com/KeyboardCowboy/orion
 
@@ -25,6 +25,15 @@ The CSS Directory is organized in the following manner:
 ## Libraries
 Orion integrates various 3rd party libraries:
 
-- [Zen Grids, v1.4](http://zengrids.com/) for responsive grid layouts
+### Included
+Some libraries are included in Orion and are loaded automatically.
 - [Typeplate, v1.1.2](http://typeplate.com/) for typography
 - [Normalize, v2.1.3](http://necolas.github.io/normalize.css/) for cross browser consistency
+
+### Installed
+Some libraries must be installed on your system in order to be used.
+- [Bourbon](http://bourbon.io)* for CSS3 and multi-vendor support
+- [Zen Grids](http://zengrids.com) for responsive grid layouts
+
+
+*Bourbon is required for Orion to work at all.
