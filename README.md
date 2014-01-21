@@ -18,16 +18,18 @@ The CSS Directory is organized in the following manner:
 ## Libraries
 Orion integrates various 3rd party libraries:
 
-### Required
-These must be installed for Orion to work
-- [Bourbon](http://bourbon.io) for CSS3 and multi-vendor support
-
 ### Included
 Some libraries are included in Orion and are loaded automatically.
+- [Bourbon](http://bourbon.io) for CSS3 and multi-vendor support (required for Orion to work)
 - [Typeplate, v1.1.2](http://typeplate.com) for typography
 - [Normalize, v2.1.3](http://necolas.github.io/normalize.css) for cross browser consistency
+
+## Optional
+Additional libraries are available and do not require additional installation.
+- [Zen Grids](http://zengrids.com) for responsive grid layouts
+- [Sassy Buttons](http://jaredhardy.com/sassy-buttons) for fun button styles
 
 ## Getting Started
 1. Copy the PROJECT directory out of Orion and into another directory.
 2. Check to ensure the paths to Orion are correct inside _master.scss.
-3. Install any libraries you need to run.
+3. Start adding your own SCSS.

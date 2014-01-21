@@ -14,20 +14,14 @@
 
 // -- MIXINS AND FUNCTIONS
 // -----------------------
-// Bourbon library is required
-@import 'bourbon/bourbon';
+// Other functions and mixins may depend on Bourbon, so load it first.
+@import '../orion/mixins/bourbon';
 
 // Load Orion's custom functions
 @import '../orion/functions';
 
 // Load Orion's custom mixins
 @import '../orion/mixins';
-
-// Requires Zen Grids to be installed
-//@import 'zen-grids';
-
-// Requires Sassy Buttons to be installed
-//@import 'sassy-buttons';
 
 // Create your own custom mixins
 @import 'components/mixins';
