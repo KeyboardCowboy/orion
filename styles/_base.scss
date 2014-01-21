@@ -1,9 +1,9 @@
 /**
  * Common application/niche styles.  No mixins.
  */
-body {
-  margin: 0 auto;
-}
+* {@include box-sizing(border-box);}
+
+body {margin: 0 auto;}
 
 a {outline: 0;}
 
