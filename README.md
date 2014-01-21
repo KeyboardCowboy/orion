@@ -1,19 +1,11 @@
-# Orion SASS Library
+# Orion Rapid Prototyping Library
 Version 3.x
 
 https://github.com/KeyboardCowboy/orion
 
-Orion is my own library of SASS components I've compiled over time in order
-to facilitate rapid prototyping for responsive and cross-browser compatible
-websites.
-
-## Why not a normal framework like Bootstrap or Foundation?
-Control. Simplicity.  Education.  I like to have control over the tools I'm using,
-the manner in which I'm generating my final CSS, the ability to limit what I'm
-including per file and above all, I like to understand exactly what's going on
-under the hood.  The components included in Orion are just what I like to use.
-
-The CSS Directory is organized in the following manner:
+Orion is my own library of [SASS](http://sass-lang.com/) components and [Jade](http://jade-lang.com/) base layouts I've compiled
+over time in order to facilitate rapid prototyping for responsive and
+cross-browser compatible websites.
 
 ## Libraries
 Orion integrates various 3rd party libraries:

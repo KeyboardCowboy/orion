@@ -1,0 +1,20 @@
+//- Create a CSS element
+mixin css(file, media)
+  - media = media || 'all'
+  link(type="text/css", rel="stylesheet", media="#{media}", href="#{file}.css")
+
+//- Create a Script element
+mixin js(file)
+  script(type="text/javascript", src="#{file}.js")
+
+//- Create a kitten image
+//- Use 1 for color, 0 for B&W
+mixin kitten(width, height, color, classes)
+  classes = classes || ''
+
+  if color
+    span.photo
+      img(src="http://placekitten.com/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
+  else
+    span.photo
+      img(src="http://placekitten.com/g/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
