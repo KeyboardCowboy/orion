@@ -1,11 +1,14 @@
 ORION v2.1.0,
 --------------------------------------------------------------------------------
-[07-Nov-2013:KeyboardCowboy]
-- Added Invisible mixin
-- Added linkedin and rss colors
+[21-Jan-2014:KeyboardCowboy]
+- Updated Normalize and Typeplate
 
 [17-Dec-2013:KeyboardCowboy]
 - Added lined-paper mixin
+
+[07-Nov-2013:KeyboardCowboy]
+- Added Invisible mixin
+- Added linkedin and rss colors
 
 ORION v2.0.1
 --------------------------------------------------------------------------------

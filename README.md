@@ -1,5 +1,5 @@
 # Orion SASS Library
-Version 2.0-beta1
+Version 2.1
 
 https://github.com/KeyboardCowboy/orion
 
@@ -22,11 +22,9 @@ The CSS Directory is organized in the following manner:
   Components are purely CSS declarations.  They should not contain any variables
   or other functionality.
 
-## Changelog
+## Libraries
+Orion integrates various 3rd party libraries:
 
-### Release 2.0-beta1
-- Added zen-grids back into mixins
-- Added Drupal QuickFix for improved status messages
-- Upgraded x-rem to handle multiple values
-- Removed Text-Shadow mixin.  IE just sucks at rendering text shadows.
-- Completely restructured the repo.
+- [Zen Grids, v1.4](http://zengrids.com/) for responsive grid layouts
+- [Typeplate, v1.1.2](http://typeplate.com/) for typography
+- [Normalize, v2.1.3](http://necolas.github.io/normalize.css/) for cross browser consistency
