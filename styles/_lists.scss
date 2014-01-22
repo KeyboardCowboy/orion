@@ -39,6 +39,25 @@ ul.menu, ol.menu {
   }
 }
 
+nav.inline ul {
+  li {
+    display: inline-block;
+    list-style: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+      display: inline-block;
+      margin-right: -5px;
+      padding: {
+        left: .5em;
+        right: .5em;
+      }
+    }
+  }
+}
+
 // Drupal generated lists of content.
 ul.item-list, ol.item-list {
 

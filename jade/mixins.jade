@@ -3,14 +3,16 @@ mixin css(file, media)
   - media = media || 'all'
   link(type="text/css", rel="stylesheet", media="#{media}", href="#{file}.css")
 
+
 //- Create a Script element
 mixin js(file)
   script(type="text/javascript", src="#{file}.js")
 
+
 //- Create a kitten image
 //- Use 1 for color, 0 for B&W
 mixin kitten(width, height, color, classes)
-  classes = classes || ''
+  - classes = classes || ''
 
   if color
     span.photo
@@ -18,3 +20,15 @@ mixin kitten(width, height, color, classes)
   else
     span.photo
       img(src="http://placekitten.com/g/#{width}/#{height}", alt="Here's a cute kitten.", title="Here's a cute kitten.", class="#{classes}")
+
+
+//- Auto generate placeholder links
+mixin links(num)
+  - num = num || 3
+  i = 1;
+
+  ul
+    while i <= num
+      li
+        a(href="#") Link #{i}
+      - i++

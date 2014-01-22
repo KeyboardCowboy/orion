@@ -1,6 +1,24 @@
 // Structural Components
 // Various components to aid in CSS framework and structure.
 
+// -- Breakpoint
+//  - Create breakpoints from unitless values.
+@mixin breakpoint($min: null, $max: null) {
+  @if $min and $max {
+    @media (min-width: #{($min * $font-base)}px) and (max-width: #{($max * $font-base)}px) {
+      @content;
+    }
+  } @else if $min and $max == null {
+    @media (min-width: #{($min * $font-base)}px) {
+      @content;
+    }
+  } @else if $min == null and $max {
+    @media (max-width: #{($max * $font-base)}px) {
+      @content;
+    }
+  }
+}
+
 // -- Inline Menu List
 //  - Apply to UL
 //    Setup an inline-menu with border separators.
