@@ -63,3 +63,25 @@
     }
   }
 }
+
+// -- Sticky Footer Element
+//  - Do not apply inside an element.
+//    Keep the footer element stuck to the bottom of the page.
+@mixin sticky-footer($wrapper, $footer, $height) {
+  html, body {height: 100%;}
+
+  #{$wrapper} {
+    min-height: 100%;
+    margin-bottom: -#{$height};
+
+    &:after {
+      content: "";
+      height: $height;
+      display: block;
+    }
+  }
+
+  #{$footer} {
+    height: $height;
+  }
+}
