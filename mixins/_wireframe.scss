@@ -1,7 +1,5 @@
 // Wireframing tools
 
-$colors: green, yellow, orange, red, purple, blue;
-
 // Apply a label to the element for identification on the screen
 @mixin wiretag ($label) {
   @if $prototype {
@@ -31,10 +29,16 @@ $colors: green, yellow, orange, red, purple, blue;
 }
 
 // Fill in an element on the page.
-@mixin wirebox ($level: 1) {
+@mixin wirebox ($color: null) {
   @if $prototype {
-    border: 1px dashed nth($colors, $level);
-    background-color: rgba(nth($colors, $level), .2);
+
+    // If no color was specified, grab the default.
+    @if $color == null {
+      $color: $proto-color;
+    }
+
+    border: 1px dashed $color;
+    background-color: rgba($color, .2);
   }
 }
 
