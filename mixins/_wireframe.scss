@@ -10,9 +10,9 @@ $colors: green, yellow, orange, red, purple, blue;
     &:before {
       content: "#{$label}";
       font-size: 10pt;
-      //position: absolute;
-      //bottom: 0;
-      //right: 0;
+      position: absolute;
+      top: 0;
+      right: 0;
       float: right;
       padding: .25em .5em;
       border: {
@@ -20,7 +20,12 @@ $colors: green, yellow, orange, red, purple, blue;
         bottom: 1px dotted;
       }
       border-bottom-left-radius: .5em;
-      background-color: rgba(0,0,0,.2);
+      background-color: rgba(0,0,0,.6);
+      color: white;
+    }
+
+    &:hover {
+      &:before {z-index: 99;}
     }
   }
 }
