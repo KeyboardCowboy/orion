@@ -10,9 +10,10 @@ html
     block head_css
     block head_js
   body
-    nav#prototype.inline
-      ul
-        block layout_links
+    - if (show_layouts && layouts)
+      nav#prototype.inline
+        ul
+          block layout_links
 
     #page
       header#site-header
