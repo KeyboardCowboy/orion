@@ -29,6 +29,11 @@ mixin links(num)
 
   ul
     while i <= num
-      li
-        a(href="#") Link #{i}
+      - title = 'Link ' + i
+      +link(title)
       - i++
+
+//- Create a single link for a list of links
+mixin link(title, href)
+  - href = href || '#'
+  li: a(href="#{href}") #{title}
