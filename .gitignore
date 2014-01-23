@@ -1,2 +1,3 @@
 _test/*.css
 codekit-config.json
+.sass-cache

@@ -2,50 +2,43 @@
 
 // Apply a label to the element for identification on the screen
 @mixin wiretag ($label) {
-  @if $prototype {
-    position: relative;
+  position: relative;
 
-    &:before {
-      content: "#{$label}";
-      font-size: 10pt;
-      position: absolute;
-      top: 0;
-      right: 0;
-      float: right;
-      padding: .25em .5em;
-      border: {
-        left: 1px dotted;
-        bottom: 1px dotted;
-      }
-      border-bottom-left-radius: .5em;
-      background-color: rgba(0,0,0,.6);
-      color: white;
+  &:before {
+    content: "#{$label}";
+    font-size: 10pt;
+    position: absolute;
+    top: 0;
+    right: 0;
+    float: right;
+    padding: .25em .5em;
+    border: {
+      left: 1px dotted;
+      bottom: 1px dotted;
     }
+    border-bottom-left-radius: .5em;
+    background-color: rgba(0,0,0,.6);
+    color: white;
+  }
 
-    &:hover {
-      &:before {z-index: 99;}
-    }
+  &:hover {
+    &:before {z-index: 99;}
   }
 }
 
 // Fill in an element on the page.
 @mixin wirebox ($color: null) {
-  @if $prototype {
-
-    // If no color was specified, grab the default.
-    @if $color == null {
-      $color: $proto-color;
-    }
-
-    border: 1px dashed $color;
-    background-color: rgba($color, .2);
+  // If no color was specified, grab the default.
+  @if $color == null {
+    $color: $proto-color;
   }
+
+  border: 1px dashed $color;
+  background-color: rgba($color, .2);
 }
 
 // Set a default size on an element
 @mixin wiresize ($w: null, $h: null) {
-  @if $prototype {
-    @if $w != null {width: $w;}
-    @if $h != null {height: $h;}
-  }
+  @if $w != null {width: $w;}
+  @if $h != null {height: $h;}
 }
