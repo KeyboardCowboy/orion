@@ -39,20 +39,33 @@ ul.menu, ol.menu {
   }
 }
 
-nav.inline ul {
-  li {
-    display: inline-block;
-    list-style: none;
-    list-style-image: none;
-    margin: 0;
-    padding: 0;
-
-    a {
+nav.inline {
+  ul {
+    li {
       display: inline-block;
-      margin-right: -5px;
-      padding: {
-        left: .5em;
-        right: .5em;
+      list-style: none;
+      list-style-image: none;
+      margin: 0;
+      padding: 0;
+
+      a {
+        display: inline-block;
+        margin-right: -5px;
+        line-height: 1.0em;
+        padding: {
+          left: .5em;
+          right: .5em;
+        }
+      }
+    }
+  }
+
+  &.divided {
+    li {
+      a {border-left: 1px solid;}
+
+      &:first-child a {
+        border-left: none;
       }
     }
   }
