@@ -17,12 +17,15 @@
       bottom: 1px dotted;
     }
     border-bottom-left-radius: .5em;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(black, .6);
     color: white;
   }
 
   &:hover {
-    &:before {z-index: 99;}
+    &:before {
+      z-index: 99;
+      background-color: rgba(black, 1);
+    }
   }
 }
 
@@ -33,12 +36,14 @@
     $color: $proto-color;
   }
 
-  border: 1px dashed $color;
+  @if $proto-borders {
+    border: 1px dashed $color;
+  }
   background-color: rgba($color, .2);
 }
 
 // Set a default size on an element
 @mixin wiresize ($w: null, $h: null) {
-  @if $w != null {width: $w;}
-  @if $h != null {height: $h;}
+  @if $w != null {min-width: $w;}
+  @if $h != null {min-height: $h;}
 }

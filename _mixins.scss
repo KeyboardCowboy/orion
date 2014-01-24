@@ -1,7 +1,16 @@
 // Load all mixins in the proper order to maintain dependencies
+
+// Always load bourbon first
 @import 'mixins/bourbon/bourbon';
+
+// Other Libraries
 @import 'mixins/sassy-buttons/sassy-buttons';
 @import 'mixins/zen-grids/zen';
+
+// Orion Functions
+@import 'mixins/functions';
+
+// Orion Mixins
 @import 'mixins/ost-typography';
 @import 'mixins/ost-styles';
 @import 'mixins/ost-structure';

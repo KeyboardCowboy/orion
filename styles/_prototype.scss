@@ -1,21 +1,11 @@
-$offset: 35px;
-
-body {
-  padding-top: $offset;
-}
-
 nav#prototype {
   padding: 0 1em;
   margin: 0;
-  position: fixed;
-  height: $offset;
-  top: 0;
-  left: 0;
   width: 100%;
   background-color: black;
   color: white;
-  box-shadow: 0 5px 10px 0 rgba(black, .3);
-  overflow: hidden;
+  box-shadow: 0 5px 10px 0 rgba(black, .5);
+  position: relative;
   z-index: 9;
 
   ul {
