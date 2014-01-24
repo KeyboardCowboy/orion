@@ -3,9 +3,6 @@
 
 // REM sizing with a px fallback for older browsers.
 @mixin x-rem($property, $values) {
-  // Defaults
-  $font-base: 18 !default;
-
   // Empty list for all values in px
   $px-values: ();
   $rem-values: ();
@@ -97,4 +94,3 @@
   line-height: $height;
   padding-bottom: $height * $extra;
 }
-
