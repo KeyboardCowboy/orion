@@ -64,24 +64,62 @@
   }
 }
 
+// -- Sticky Header Element
+//  - Do not apply inside an element.
+//    Keep the header fixed at the top of the page.
+@mixin sticky-header($header, $height) {
+  @if unitless($height) {
+    body {@include o-rem(padding-top, $height);}
+    #{$header} {@include o-rem(height, $height);}
+  } @else {
+    body {padding-top: $height;}
+    #{$header} {height: $height;}
+  }
+
+  #{$header} {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+  }
+}
+
 // -- Sticky Footer Element
 //  - Do not apply inside an element.
-//    Keep the footer element stuck to the bottom of the page.
+//    Keep the footer element stuck to the bottom of the page if the content is
+//    too short to push it down.
 @mixin sticky-footer($wrapper, $footer, $height) {
   html, body {height: 100%;}
 
-  #{$wrapper} {
-    min-height: 100%;
-    margin-bottom: -#{$height};
+  @if unitless($height) {
+    #{$wrapper} {
+      min-height: 100%;
+      @include x-rem(margin-bottom, -$height);
 
-    &:after {
-      content: "";
-      height: $height;
-      display: block;
+      &:after {
+        content: "";
+        @include x-rem(height, $height);
+        display: block;
+      }
     }
-  }
 
-  #{$footer} {
-    height: $height;
+    #{$footer} {
+      @include x-rem(height, $height);
+    }
+  } @else {
+    #{$wrapper} {
+      min-height: 100%;
+      margin-bottom: -#{$height};
+
+      &:after {
+        content: "";
+        height: $height;
+        display: block;
+      }
+    }
+
+    #{$footer} {
+      height: $height;
+    }
   }
 }

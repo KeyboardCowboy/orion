@@ -25,7 +25,7 @@ mixin kitten(width, height, color, classes)
 //- Auto generate placeholder links
 mixin links(num)
   - num = num || 3
-  i = 1;
+  i = 1
 
   ul
     while i <= num
@@ -37,3 +37,18 @@ mixin links(num)
 mixin link(title, href)
   - href = href || '#'
   li: a(href="#{href}") #{title}
+
+
+//- Create a series of checkboxes
+mixin checks(num, grp)
+  - num = num || 3
+  - grp = grp || 'grp'
+  - i = 1
+
+  - for (i = 1; i <= num; i++) {
+    - id = grp + '-' + i
+
+    div.form-item.checkbox
+      input(type='checkbox', name=id, id=id)
+      label(for=id) Option #{i}
+  - }

@@ -33,42 +33,52 @@ ul.menu, ol.menu {
     list-style: none;
     list-style-image: none;
   }
-
-  &.inline {
-
-  }
 }
 
-nav.inline {
+// Navigation Menus
+nav {
   ul {
+    margin: 0;
+    padding: 0;
+
     li {
-      display: inline-block;
       list-style: none;
       list-style-image: none;
       margin: 0;
       padding: 0;
+    }
+  }
 
-      a {
+  &.inline {
+    ul {
+      li {
         display: inline-block;
-        margin-right: -5px;
-        line-height: 1.0em;
-        padding: {
-          left: .5em;
-          right: .5em;
+
+        a {
+          display: inline-block;
+          margin-right: -5px;
+          line-height: 1.0em;
+          padding: {
+            left: .5em;
+            right: .5em;
+          }
+        }
+      }
+    }
+
+    &.divided {
+      li {
+        a {border-left: 1px solid;}
+
+        &:first-child a {
+          border-left: none;
         }
       }
     }
   }
+}
 
-  &.divided {
-    li {
-      a {border-left: 1px solid;}
-
-      &:first-child a {
-        border-left: none;
-      }
-    }
-  }
+nav.inline {
 }
 
 // Drupal generated lists of content.

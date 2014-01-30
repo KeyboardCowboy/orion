@@ -1,7 +1,14 @@
 // Custom typographical mixins
 // Dependencies: typeplate variables
 
-// REM sizing with a px fallback for older browsers.
+// -- Provide PX backup to REM sizing for IE8 support.
+//  - Replacing x-rem for consistent naming conventions.
+@mixin o-rem($property, $values) {
+  @include x-rem($property, $values);
+}
+
+// -- Provide PX backup to REM sizing for IE8 support.
+//  - DEPRECATED - Use o-rem instead.
 @mixin x-rem($property, $values) {
   // Empty list for all values in px
   $px-values: ();
@@ -14,9 +21,9 @@
       $px-values: append($px-values, $value);
       $rem-values: append($rem-values, $value);
     }
-    // If the value is not zero, convert it from px to rem
+    // If the value is not zero, convert it from rem to px
     @else {
-      $px-values: append($px-values, #{($value * $font-base)}px);
+      $px-values: append($px-values, o-rem2px($value));
       $rem-values: append($rem-values, #{$value}rem);
     }
   }
