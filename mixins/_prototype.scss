@@ -32,13 +32,13 @@
 }
 
 // Fill in an element on the page.
-@mixin wirebox ($color: null) {
+@mixin wirebox ($color: null, $border: false) {
   // If no color was specified, grab the default.
   @if $color == null {
     $color: $proto-color;
   }
 
-  @if $proto-borders {
+  @if $proto-borders or $border {
     border: 1px dashed $color;
   }
   background-color: rgba($color, .2);

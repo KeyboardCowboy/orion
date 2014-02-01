@@ -6,7 +6,7 @@ mixin css(file, media)
 
 //- Create a Script element
 mixin js(file)
-  script(type="text/javascript", src="#{file}.js")
+  script(type="text/javascript", src="#{file}")
 
 
 //- Create a kitten image
@@ -23,20 +23,42 @@ mixin kitten(width, height, color, classes)
 
 
 //- Auto generate placeholder links
-mixin links(num)
+mixin links(num, href)
   - num = num || 3
-  i = 1
+  - href = href || '#'
+  - i = 1
 
   ul
     while i <= num
       - title = 'Link ' + i
-      +link(title)
+      +link(title, href)
       - i++
 
 //- Create a single link for a list of links
 mixin link(title, href)
   - href = href || '#'
   li: a(href="#{href}") #{title}
+
+
+//- Create a list with a series of items
+mixin list(num, type)
+  - num = num || 3
+  - type = type || 'ul'
+
+  #{type}
+    - for (i = 1; i <= num; i++) {
+      li List Item #{i}
+    - }
+
+
+//- Insert a paragraph of text
+mixin p
+  p
+    | Collaboratively build market-driven ROI after user friendly experiences.
+    | Authoritatively impact multidisciplinary resources via bleeding-edge synergy.
+    | Efficiently leverage other's standardized methods of empowerment through functionalized information.
+    | Intrinsicly aggregate adaptive networks rather than multimedia based models.
+    | Appropriately disintermediate client-centric expertise through impactful infomediaries.
 
 
 //- Create a series of checkboxes

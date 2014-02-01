@@ -4,12 +4,6 @@
 // -- Provide PX backup to REM sizing for IE8 support.
 //  - Replacing x-rem for consistent naming conventions.
 @mixin o-rem($property, $values) {
-  @include x-rem($property, $values);
-}
-
-// -- Provide PX backup to REM sizing for IE8 support.
-//  - DEPRECATED - Use o-rem instead.
-@mixin x-rem($property, $values) {
   // Empty list for all values in px
   $px-values: ();
   $rem-values: ();
@@ -31,6 +25,12 @@
   // Return the property and its list of converted values
   #{$property}: #{$px-values};
   #{$property}: #{$rem-values};
+}
+
+// -- Provide PX backup to REM sizing for IE8 support.
+//  - DEPRECATED - Use o-rem instead.
+@mixin x-rem($property, $values) {
+  @include o-rem($property, $values);
 }
 
 // Apply certain styles to all headers.
