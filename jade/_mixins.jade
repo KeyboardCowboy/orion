@@ -23,15 +23,15 @@ mixin kitten(width, height, color, classes)
 
 
 //- Auto generate placeholder links
-mixin links(num, href)
-  - num = num || 3
-  - href = href || '#'
+mixin links(num, title, href)
+  - num   = num || 3
+  - title = title || 'Link'
+  - href  = href || '#'
   - i = 1
 
   ul
     while i <= num
-      - title = 'Link ' + i
-      +link(title, href)
+      +link(title + ' ' + i, href)
       - i++
 
 //- Create a single link for a list of links
@@ -52,13 +52,28 @@ mixin list(num, type)
 
 
 //- Insert a paragraph of text
-mixin p
-  p
-    | Collaboratively build market-driven ROI after user friendly experiences.
-    | Authoritatively impact multidisciplinary resources via bleeding-edge synergy.
-    | Efficiently leverage other's standardized methods of empowerment through functionalized information.
-    | Intrinsicly aggregate adaptive networks rather than multimedia based models.
-    | Appropriately disintermediate client-centric expertise through impactful infomediaries.
+//- @param sen
+//-   The number of sentences per paragraph
+//- @param cnt
+//-   The number of paragraphs to print
+mixin p(sen,cnt)
+  - sen = sen || 3
+  - cnt = cnt || 1
+  - pool = ["Collaboratively build market-driven ROI after user friendly experiences. ","Authoritatively impact multidisciplinary resources via bleeding-edge synergy. ","Efficiently leverage other's standardized methods of empowerment through functionalized information. ","Intrinsicly aggregate adaptive networks rather than multimedia based models. ","Appropriately disintermediate client-centric expertise through impactful infomediaries. ","Conveniently optimize holistic \"outside the box\" thinking for visionary \"outside the box\" thinking. ","Uniquely syndicate long-term high-impact data before client-based metrics. ","Rapidiously architect optimal strategic theme areas with adaptive bandwidth. ","Synergistically evisculate efficient infrastructures for error-free mindshare. ","Compellingly negotiate global core competencies with enterprise-wide mindshare. ","Assertively coordinate ubiquitous growth strategies without. "]
+
+  - p = [];
+  - for (i = 1; i <= cnt; i++) {
+    - s = '';
+    - for (ii = 1; ii <= sen; ii++) {
+        - ind = Math.floor(Math.random() * 11)
+        - s += pool[ind]
+    - }
+    - p.push(s);
+  - }
+
+  - for (i in p) {
+      p #{p[i]}
+  - }
 
 
 //- Create a series of checkboxes
@@ -73,4 +88,13 @@ mixin checks(num, grp)
     div.form-item.checkbox
       input(type='checkbox', name=id, id=id)
       label(for=id) Option #{i}
+  - }
+
+//- Generate options for a select list
+mixin selops(num, title)
+  - num = num || 3
+  - title = title || 'Option'
+
+  - for (i = 1; i <= num; i++) {
+    option #{title + ' ' + i}
   - }

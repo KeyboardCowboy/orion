@@ -49,3 +49,15 @@
   @if $w != null {min-width: $w;}
   @if $h != null {min-height: $h;}
 }
+
+// Add a borders to separate vertically stacked elements
+@mixin d-vert {
+  border-bottom: 1px dashed;
+  &:last-child {border-bottom: none;}
+}
+
+// Add borders to separate horizontally stacked elements
+@mixin d-horz {
+  border-right: 1px dashed;
+  &:last-child {border-right: none;}
+}
