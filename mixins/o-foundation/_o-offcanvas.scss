@@ -1,0 +1,40 @@
+// Mixin wrappers to make it easier to implement foundation elements
+
+// Override default OC variables
+$include-html-off-canvas-classes: false;
+
+// Define our default variables
+$oc-inner-wrapper:  '.inner-wrapper' !default;
+
+// Load Foundation's OffCanvas partial
+@import '../../foundation/scss/foundation/components/offcanvas';
+
+// -- Off Canvas Base Setup
+//  - Include once then include left, right or both oc implementations below.
+@mixin o-oc-base {
+  // This class is required by the JS
+  .off-canvas-wrap      {@include off-canvas-wrap;}
+  #{$oc-inner-wrapper}  {@include inner-wrap;}
+}
+
+// -- Setup the content to slide from the left.
+@mixin o-oc-left($content) {
+  #{$content} {@include left-off-canvas-menu;}
+
+  // This class is required by the JS
+  .move-right {
+    > #{$oc-inner-wrapper} {@include translate3d($off-canvas-width,0,0);}
+    a.exit-off-canvas {@include back-link;}
+  }
+}
+
+// -- Setup the content to slide from the right.
+@mixin o-oc-right($content) {
+  #{$content} {@include right-off-canvas-menu;}
+
+  // This class is required by the JS
+  .move-left {
+    > #{$oc-inner-wrapper} {@include translate3d(-($off-canvas-width),0,0);}
+    a.exit-off-canvas {@include back-link;}
+  }
+}
