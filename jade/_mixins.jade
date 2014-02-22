@@ -77,9 +77,10 @@ mixin p(sen,cnt)
 
 
 //- Create a series of checkboxes
-mixin checks(num, grp)
+mixin checks(num, grp, label)
   - num = num || 3
   - grp = grp || 'grp'
+  - label = label || 'Option'
   - i = 1
 
   - for (i = 1; i <= num; i++) {
@@ -87,7 +88,7 @@ mixin checks(num, grp)
 
     div.form-item.checkbox
       input(type='checkbox', name=id, id=id)
-      label(for=id) Option #{i}
+      label(for=id) #{label} #{i}
   - }
 
 //- Generate options for a select list

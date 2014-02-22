@@ -61,3 +61,9 @@
   border-right: 1px dashed;
   &:last-child {border-right: none;}
 }
+
+// Style a link to look like a button
+@mixin proto-button {
+  @include button('simple', $proto-color);
+  @include o-rem(font-size, 1);
+}
