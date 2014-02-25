@@ -23,14 +23,21 @@
 //  - Apply to UL
 //    Setup an inline-menu with border separators.
 @mixin inline-menu($spacing, $color) {
+  margin: 0;
+  padding: 0;
+
   li {
+    margin: 0;
+    padding: 0;
     display: inline-block;
+    vertical-align: top;
+    margin-right: -5px;
 
     a {
       display: inline-block;
       padding: 0 $spacing 0 $spacing;
-      margin-right: -5px;
       border-right: 1px solid $color;
+      line-height: normal;
     }
 
     &.last a {border-right: none;}
