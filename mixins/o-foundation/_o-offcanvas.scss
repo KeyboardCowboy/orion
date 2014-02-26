@@ -10,8 +10,8 @@ $include-html-off-canvas-classes: false;
 //  - Include once then include left, right or both oc implementations below.
 @mixin o-oc-base($inner-wrapper) {
   // This class is required by the JS
-  .off-canvas-wrap {@include off-canvas-wrap;}
-  $inner-wrapper   {@include inner-wrap;}
+  .off-canvas-wrap  {@include off-canvas-wrap;}
+  #{$inner-wrapper} {@include inner-wrap;}
 }
 
 // -- Setup the content to slide from the left.
