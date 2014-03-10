@@ -1,128 +1,122 @@
-/*
- *
-.||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
-
-    .                                      '||            .
-  .||.  .... ... ... ...    ....  ... ...   ||   ....   .||.    ....
-   ||    '|.  |   ||'  || .|...||  ||'  ||  ||  '' .||   ||   .|...||
-   ||     '|.|    ||    | ||       ||    |  ||  .|' ||   ||   ||
-   '|.'    '|     ||...'   '|...'  ||...'  .||. '|..'|'  '|.'  '|...'
-        .. |      ||               ||
-         ''      ''''             ''''                      VARIABLES
-
- .||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||..||.
- *
- */
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
+//
+// $Variables
+//
+// .x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x.x //
 
 
-
-// $BaseType
+// $Variable $BaseType
 // -------------------------------------//
+//the serif boolean var can be redeclared from another stylesheet. However
+//the var must be placed after your @import "typeplate.scss";
+$serif-boolean: true !default;
 
-$font-weight: normal;
-$line-height: 1.65;
-$font-size: 112.5; // percentage value (16 * 112.5% = 18px)
-$font-base: 16 * ($font-size/100); // converts our percentage to a pixel value
-$font-family: serif; // Non-font-face font-stack
-$custom-font-family: false; // Custom font-face stack, if set will be added to the $font-family
+$font-family: if($serif-boolean, serif, sans-serif) !default; // Non-font-face font-stack
+
+$font-weight: normal !default;
+$line-height: 1.65 !default;
+$font-size: 112.5 !default; // percentage value (16 * 112.5% = 18px)
+$font-base: 16 * ($font-size/100) !default; // converts our percentage to a pixel value
+$custom-font-family: false !default; // Custom font-face stack, if set will be added to the $font-family
+$measure: $font-base * $line-height;
 
 
-// $Paragraphs
+// $Variable $Paragraphs
 // -------------------------------------//
 
 // Text Indentation Value
-$indent-val: 1.5em;
+$indent-val: 1.5em !default;
 
 // Paragraph Styling Boolean
 // 'false' means no vertical whitespace
 // between subsequent paragraphs.
-$paragraph-vertical-whitespace: false;
+$paragraph-vertical-whitespace: false !default;
 
 
-// $Small Print
+// $Variable $Small-Print
 // -------------------------------------//
 
-$small-print-size: 65%;
+$small-print-size: 65% !default;
 
 
-// $Color
+// $Variable $Base-Color
 // -------------------------------------//
 
-$body-copy-color: #444;
-$heading-color: #222;
+$body-copy-color: #444 !default;
+$heading-color: #222 !default;
 
 
-// $Ampersand
+// $Variable $Ampersand
 // -------------------------------------//
 
-$amp-fontface-name: Ampersand;
-$amp-fontface-source: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua');
-$amp-fontface-fallback: local('Georgia');
+$amp-fontface-name: Ampersand !default;
+$amp-fontface-source: local('Georgia'), local('Garamond'), local('Palatino'), local('Book Antiqua') !default;
+$amp-fontface-fallback: local('Georgia') !default;
 
 // Allows for our ampersand element to have differing
 // font-family from the ampersand unicode font-family.
-$amp-font-family: Verdana, sans-serif;
+$amp-font-family: Verdana, sans-serif !default;
 
 
-// $Icon-Font-Helper
+// $Variable $Icon-Font-Helper
 // -------------------------------------//
 // ex.1) $icon-fonts: (icon-name);
 // ex.2) $icon-fonts: (icon-name1, icon-name2, icon-name3);
-$icon-fonts: null;
+$icon-fonts: null !default;
 
 
-// $TypeScale
+// $Variable $Typescale
 // -------------------------------------//
 
-$tera: 117; // 117 = 18 × 6.5
-$giga: 90; // 90 = 18 × 5
-$mega: 72; // 72 = 18 × 4
-$alpha: 60; // 60 = 18 × 3.3333
-$beta: 48; // 48 = 18 × 2.6667
-$gamma: 36; // 36 = 18 × 2
-$delta: 24; // 24 = 18 × 1.3333
-$epsilon: 21; // 21 = 18 × 1.1667
-$zeta: 18; // 18 = 18 × 1
+$tera: 117 !default; // 117 = 18 × 6.5
+$giga: 90 !default; // 90 = 18 × 5
+$mega: 72 !default; // 72 = 18 × 4
+$alpha: 60 !default; // 60 = 18 × 3.3333
+$beta: 48 !default; // 48 = 18 × 2.6667
+$gamma: 36 !default; // 36 = 18 × 2
+$delta: 24 !default; // 24 = 18 × 1.3333
+$epsilon: 21 !default; // 21 = 18 × 1.1667
+$zeta: 18 !default; // 18 = 18 × 1
 
 
-// $TypeScale-Unit
+// $Variable $Typescale-Unit
 // -------------------------------------//
 
-$type-scale-unit-value: rem;
+$type-scale-unit-value: rem !default;
 
 
-// $Pull-Quotes
+// $Variable $Pull-Quotes
 // -------------------------------------//
 
-$pull-quote-fontsize: 4em;
-$pull-quote-opacity: 0.5;
-$pull-quote-color: #dc976e;
+$pull-quote-fontsize: 4em !default;
+$pull-quote-opacity: 0.5 !default;
+$pull-quote-color: #dc976e !default;
 
 
-// $Citation
+// $Variable $Citation
 // -------------------------------------//
 
-$cite-display: block;
-$cite-text-align: right;
-$cite-font-size: inherit;
+$cite-display: block !default;
+$cite-text-align: right !default;
+$cite-font-size: inherit !default;
 
 
-// $SmallCaps
+// $Variable $Small-Caps
 // -------------------------------------//
 
-$small-caps-color: gray;
-$small-caps-weight: 600;
+$small-caps-color: gray !default;
+$small-caps-weight: 600 !default;
 
 
-// $DropCap
+// $Variable $DropCap
 // -------------------------------------//
 
-$dropcap-float-position: left;
-$dropcap-font-size: 4em;
-$dropcap-font-family: inherit;
-$dropcap-txt-indent: 0;
-$dropcap-margin: inherit;
-$dropcap-padding: inherit;
-$dropcap-color: inherit;
-$dropcap-line-height: 1;
-$dropcap-bg: transparent;
+$dropcap-float-position: left !default;
+$dropcap-font-size: 4em !default;
+$dropcap-font-family: inherit !default;
+$dropcap-txt-indent: 0 !default;
+$dropcap-margin: inherit !default;
+$dropcap-padding: inherit !default;
+$dropcap-color: inherit !default;
+$dropcap-line-height: 1 !default;
+$dropcap-bg: transparent !default;
