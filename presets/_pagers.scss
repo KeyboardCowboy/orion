@@ -36,12 +36,16 @@
     }
   }
 }
+
+//- Helper
 %pager-buttons-gradient-struct {
   padding: .25em .5em;
   border: 1px solid #ccc;
   border-radius: .25em;
   line-height: normal;
 }
+
+//- Helper
 %pager-buttons-gradient-active {
   @include linear-gradient(darken(#fff, 5%), darken(#eee, 5%));
 }

@@ -1,10 +1,12 @@
-// Copy these variables into your subtheme and import them before importing
-// dependent cBase mixins and functions.
+// -- DEFAULT VARS
 
 // Starter Colors
 $status:  rgb(3, 15, 91) !default;
 $warning: rgb(101, 73, 23) !default;
 $error:   rgb(69, 4, 12) !default;
+
+
+// -- OVERRIDE 3RD PARTY DEFAULTS
 
 // Foundation Defaults
 $include-html-classes: false;

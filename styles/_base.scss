@@ -1,28 +1,8 @@
-/**
- * Common application/niche styles.  No mixins.
- */
+//- Global base styles.  No assumptions.
+@charset "UTF-8";
+
 * {@include box-sizing(border-box);}
 
 body {margin: 0 auto;}
 
 a {outline: 0;}
-
-// Font awesome helpers.
-.icon-left  {margin-right: 1em;}
-.icon-right {margin-left: 1em;}
-[class^="icon-"], [class*=" icon-"] {text-decoration: none;}
-
-// @TODO: Move lists into this sheet?
-
-// Fixed Footers
-.fixed-bottom {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-}
-
-.hide {
-  height: 0;
-  overflow: hidden;
-  position: absolute;
-}
