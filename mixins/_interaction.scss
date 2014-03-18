@@ -16,7 +16,6 @@
 
 //-- Menu Icon
 // - Replace the text in an element with a 3-bar menu "icon"
-// - REQUIRES: Bourbon
 @mixin menu-icon($size, $color, $pos: left, $thick: 1px) {
   $line1: ($size / 3) * 1;
   $line2: ($size / 3) * 2;
