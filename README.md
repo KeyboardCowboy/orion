@@ -23,13 +23,21 @@ Some libraries are included in Orion and are loaded automatically.
 
 ## How to Use Orion
 1. Drop Orion into your project.
+
+        - mySassProject
+          - orion
+          - _vars.scss
+          - _mixins.scss
+          - styles.scss
+
 2. Import the orion partial into your SCSS file.
 
   `@import 'orion/orion';`
 
-3. Add any custom variables, especially any that typeplate may use if you are including that.
+3. Add any custom variables and mixins, especially any variables that typeplate may use if you are including that.
 
-  `@import 'vars';`
+        @import 'vars';
+        @import 'mixins';
 
 4. (Optional) Import starter styles
 
