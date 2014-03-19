@@ -31,7 +31,7 @@ Some libraries are included in Orion and are loaded automatically.
 
 3. (Optional) Import starter styles
 
-      @import 'orion/normalize';
-      @import 'orion/typeplate';
+        @import 'orion/normalize';
+        @import 'orion/typeplate';
 
 4. Add your own styles.
