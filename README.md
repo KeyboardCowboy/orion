@@ -27,9 +27,11 @@ Some libraries are included in Orion and are loaded automatically.
 
   `@import 'orion/orion';`
 
+3. Add any custom variables, especially any that typeplate may use if you are including that.
+
 3. (Optional) Import starter styles
 
-    @import 'orion/normalize';
-    @import 'orion/typeplate';
+    `@import 'orion/normalize';
+    @import 'orion/typeplate';`
 
 4. Add your own styles.
