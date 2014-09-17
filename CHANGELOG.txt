@@ -1,7 +1,10 @@
 ORION v3.0-alpha3
 --------------------------------------------------------------------------------
+[17-Sep-2014:KeyboardCowboy]
+- Added hanging-indent mixin.
+
 [26-Jul-2014:KeyboardCowboy]
-- Added _forms.scss with placeholder mixin
+- Added _forms.scss with placeholder mixin.
 
 [03-Jul-2014:KeyboardCowboy]
 - Added table-layout: fixed to base styles.

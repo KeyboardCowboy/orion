@@ -75,3 +75,10 @@
     $itt: $itt + 1;
   }
 }
+
+// If the first line of an element is indented, indent the following lines.
+// @param $size - The width of the hanging indentation.
+@mixin hanging-indent($size) {
+  padding-left: $size;
+  text-indent: -$size;
+}
