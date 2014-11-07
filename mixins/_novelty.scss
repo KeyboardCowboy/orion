@@ -15,3 +15,17 @@
   line-height: $height;
   padding-bottom: $height * $extra;
 }
+
+// Transition text between two colors.
+// - $c1: Color 1
+// - $c2: Color 2
+// - $speed: Transition speed for one complete cycle.
+// - $ease: Easing type.
+@mixin color-fade($c1, $c2, $speed: 1s, $ease: linear) {
+  @include animation(colorFade $speed infinite $ease);
+  @include keyframes(colorFade) {
+    0%   {color: $c1;}
+    50%  {color: $c2;}
+    100% {color: $c1;}
+  }
+}
