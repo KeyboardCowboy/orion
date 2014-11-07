@@ -1,7 +1,9 @@
 ORION v3.0-alpha3
 --------------------------------------------------------------------------------
 [7-Nov-2014:KeyboardCowboy]
-- Added flashing text mixin.
+- Added transitioning text mixin.
+- Added spin mixin.
+- Moving spin and color-fade mixins to _animations partial.
 
 [17-Sep-2014:KeyboardCowboy]
 - Added hanging-indent mixin.
