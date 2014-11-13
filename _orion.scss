@@ -10,7 +10,7 @@
 @import 'mixins/zen-grids/zen';
 
 // Load Orion functions
-@import 'mixins/functions';
+@import 'functions/functions';
 
 // Load Orion mixins
 @import 'mixins/typography';
@@ -20,18 +20,18 @@
 @import 'mixins/interaction';
 @import 'mixins/novelty';
 @import 'mixins/animations';
-@import 'mixins/foundation';
+//@import 'mixins/foundation';
 
-// Load presets styles
+// Load extendable styles
 // - These are collections of pre-styled components that you can extend into
 //   your site to quickly spin up a site.
 //   Variables can be defined in your custom vars file to customize colors,
 //   spacing, sizing etc.
-@import 'presets/structure';
-@import 'presets/backgrounds';
-@import 'presets/messages';
-@import 'presets/pagers';
-@import 'presets/menus';
+@import 'extends/structure';
+@import 'extends/backgrounds';
+@import 'extends/messages';
+@import 'extends/pagers';
+@import 'extends/menus';
 
 // Universal base styles.  No assumptions.
 @import 'styles/base';

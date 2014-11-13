@@ -1,5 +1,11 @@
 ORION v3.0-alpha3
 --------------------------------------------------------------------------------
+[13-Nov-2014:KeyboardCowboy]
+- Removing deprecated tests.
+- Moving functions to own folder.
+- Renaming 'presets' to 'extends'
+- Adding vertical and horizontal centering extendables.
+
 [7-Nov-2014:KeyboardCowboy]
 - Added transitioning text mixin.
 - Added spin mixin.
