@@ -9,6 +9,13 @@ mixin js(file)
   script(type="text/javascript", src="#{file}")
 
 
+//- Social Link
+mixin social_link(icon, text, href)
+  a(href="#{href}", target='_blank')
+    i(class="#{icon}")
+    span #{text}
+
+
 //- Create a kitten image
 //- Use 1 for color, 0 for B&W
 mixin kitten(width, height, color, classes)
