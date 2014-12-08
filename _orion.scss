@@ -6,9 +6,6 @@
 // Load Bourbon mixins & functions
 @import 'mixins/bourbon/bourbon';
 
-// Load Zen-Grids
-@import 'mixins/zen-grids/zen';
-
 // Load Orion functions
 @import 'functions/functions';
 
@@ -20,7 +17,6 @@
 @import 'mixins/interaction';
 @import 'mixins/novelty';
 @import 'mixins/animations';
-//@import 'mixins/foundation';
 
 // Load extendable styles
 // - These are collections of pre-styled components that you can extend into
