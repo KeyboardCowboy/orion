@@ -34,10 +34,16 @@
 // - $dir: The direction to enter from.
 // - $speed: The duration of the animation.
 // - $ease: Easing to use.
-@mixin slide($dir, $speed: .5s, $ease: ease-out) {
-  @include animation(_slide $speed $ease);
-  @include keyframes(_slide) {
-    0% {@include transform(translateX(if($dir == left, -100%, 100%)));}
-    100% {@include transform(translateX(0));}
-  }
+@mixin slide($dir: left, $speed: .5s, $ease: ease-out) {
+  @include animation(_slide-#{$dir} $speed $ease);
+}
+
+// Keyframes
+@include keyframes(_slide-left) {
+  0% {@include transform(translateX(-100%));}
+  100% {@include transform(translateX(0));}
+}
+@include keyframes(_slide-right) {
+  0% {@include transform(translateX(100%));}
+  100% {@include transform(translateX(0));}
 }
