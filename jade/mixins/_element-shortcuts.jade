@@ -2,6 +2,13 @@
 mixin css(file, media)
   - media = media || 'all'
   link(type="text/css", rel="stylesheet", media="#{media}", href="#{file}.css")
+
 //- Create a Script element
 mixin js(file)
   script(type="text/javascript", src="#{file}")
+
+//- Navigation element
+mixin nav(id)
+  nav(id="nav-#{id}", role="navigation")
+    ul
+      block
