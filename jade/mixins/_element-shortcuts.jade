@@ -1,0 +1,7 @@
+//- Create a CSS element
+mixin css(file, media)
+  - media = media || 'all'
+  link(type="text/css", rel="stylesheet", media="#{media}", href="#{file}.css")
+//- Create a Script element
+mixin js(file)
+  script(type="text/javascript", src="#{file}")
