@@ -107,3 +107,21 @@
     @include transform(translate(-50%, -50%));
   }
 }
+
+// -- Setup a simple flexbox menu
+//  - Apply to the UL
+@mixin flexmenu {
+  @include display(flex);
+  @include align-items(stretch);
+  @include flex-direction(row);
+  @include justify-content(flex-start);
+
+  li {
+    @include flex(1);
+    display: block;
+
+    a {
+      display: block;
+    }
+  }
+}

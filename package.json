@@ -1,6 +1,6 @@
 {
   "name": "orion",
-  "version": "3.1.0",
+  "version": "3.1.1",
   "description": "Library of sass mixins and jade templates for rapid prototyping.",
   "keywords": [
     "css",
