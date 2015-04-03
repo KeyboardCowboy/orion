@@ -24,10 +24,3 @@
   background-size: 50px 50px;
   background-position: -25px 0, -25px 0, 0 0, 0 0;
 }
-
-%lined-paper {
-  background-color: #fff;
-  @include background-image(linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px),
-    linear-gradient(#eee .1em, transparent .1em));
-  background-size: 100% 1.2em;
-}
