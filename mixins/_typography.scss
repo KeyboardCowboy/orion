@@ -98,3 +98,16 @@
     $itt: $itt + 1;
   }
 }
+
+// -- Simple drop cap structure
+@mixin o-dropcap($lines: 2) {
+  $size: $lines * $line-height + em;
+
+  &:first-letter {
+    font-size: $size;
+    float: left;
+    clear: left;
+    line-height: 1em;
+    margin: 0 .1em 0 0;
+  }
+}
